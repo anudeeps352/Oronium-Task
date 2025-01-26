@@ -19,7 +19,6 @@ const fetchweatherData = async (
     const time = data.current_weather.time;
     const location = `${latitude.toFixed(2)}, ${longitude.toFixed(2)}`;
     const timezone = data.timezone;
-    console.log(data);
     return { time, location, timezone };
   } catch (error) {
     throw new Error(`Error fetching data: ${error}`);
